@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "631445164835",
+    "project_id": "comida-5ff8a",
+    "storage_bucket": "comida-5ff8a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631445164835:android:ad4c421e44077455f2b296",
+        "android_client_info": {
+          "package_name": "com.example.comida"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyl7JOuyzt2a91NGi1NEGb2Uxy81YUp2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

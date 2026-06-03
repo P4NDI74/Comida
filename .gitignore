@@ -1,0 +1,37 @@
+# Android
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+*.ap_
+*.dex
+/app/build/
+
+# Gradle
+.gradle/
+build/
+
+# IntelliJ / Android Studio
+*.iws
+out/
+.idea/
+
+# .NET / ASP.NET Core
+api/ComidaAPI_base/bin/
+api/ComidaAPI_base/obj/
+api/ComidaAPI_base/*.user
+api/ComidaAPI_base/.vs/
+
+# Sensitive config
+api/ComidaAPI_base/appsettings.Development.json
+
+# OS
+Thumbs.db
+.DS_Store

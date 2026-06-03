@@ -1,0 +1,70 @@
+@baseUrl = https://localhost:7000
+@token = PEGA_AQUI_TU_FIREBASE_ID_TOKEN
+
+GET {{baseUrl}}/health
+
+### Validar token
+GET {{baseUrl}}/api/auth/me
+Authorization: Bearer {{token}}
+
+### Alimentos
+GET {{baseUrl}}/api/alimentos
+Authorization: Bearer {{token}}
+
+POST {{baseUrl}}/api/alimentos
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "nombre": "Torta",
+  "precio": 35,
+  "lugar": "Cafetería"
+}
+
+DELETE {{baseUrl}}/api/alimentos/idDelDocumento
+Authorization: Bearer {{token}}
+
+### Bebidas
+GET {{baseUrl}}/api/bebidas
+Authorization: Bearer {{token}}
+
+POST {{baseUrl}}/api/bebidas
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "nombre": "Agua",
+  "precio": 15,
+  "lugar": "Tienda"
+}
+
+DELETE {{baseUrl}}/api/bebidas/idDelDocumento
+Authorization: Bearer {{token}}
+
+### Gastos
+GET {{baseUrl}}/api/gastos
+Authorization: Bearer {{token}}
+
+POST {{baseUrl}}/api/gastos
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "nombreNegocio": "Cafetería",
+  "descripcion": "Comida del día",
+  "costo": 65
+}
+
+DELETE {{baseUrl}}/api/gastos
+Authorization: Bearer {{token}}
+
+### Sugerencias
+POST {{baseUrl}}/api/sugerencias
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "presupuesto": 80,
+  "incluirComida": true,
+  "incluirBebida": true
+}
