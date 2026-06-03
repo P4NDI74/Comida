@@ -37,6 +37,12 @@ app.UseSwaggerUI();
 
 app.UseCors("DefaultCors");
 
+app.Use(async (context, next) =>
+{
+    Console.WriteLine($"[{DateTime.UtcNow:HH:mm:ss}] {context.Request.Method} {context.Request.Path}");
+    await next();
+});
+
 app.UseMiddleware<FirebaseAuthMiddleware>();
 
 app.MapGet("/", () => Results.Ok(new
